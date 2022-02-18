@@ -50,7 +50,7 @@ class NewsViewController: UIViewController {
     }
 }
 
-// MARK: UITableViewDelegate
+// MARK: NewsListViewModelDelegate
 extension NewsViewController: NewsListViewModelDelegate {
     func reloadData() {
         tableView.reloadData()

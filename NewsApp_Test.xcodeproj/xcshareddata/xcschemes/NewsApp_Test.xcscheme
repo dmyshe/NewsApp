@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3280CEB927BD1CB400E3DAAB"
-               BuildableName = "DevTechi.app"
+               BuildableName = "NewsApp_Test.app"
                BlueprintName = "NewsApp_Test"
                ReferencedContainer = "container:NewsApp_Test.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3280CEB927BD1CB400E3DAAB"
-            BuildableName = "DevTechi.app"
+            BuildableName = "NewsApp_Test.app"
             BlueprintName = "NewsApp_Test"
             ReferencedContainer = "container:NewsApp_Test.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3280CEB927BD1CB400E3DAAB"
-            BuildableName = "DevTechi.app"
+            BuildableName = "NewsApp_Test.app"
             BlueprintName = "NewsApp_Test"
             ReferencedContainer = "container:NewsApp_Test.xcodeproj">
          </BuildableReference>
