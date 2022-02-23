@@ -32,7 +32,6 @@ final class NewsTableViewCell: UITableViewCell {
         let label = UILabel()
         label.textColor = .darkGray
         label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 

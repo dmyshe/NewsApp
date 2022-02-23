@@ -13,7 +13,6 @@ class NewsImageView: UIView {
     //MARK: Views
     private lazy var imageView: UIImageView = {
         let imageView  = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 20
         imageView.clipsToBounds = true
