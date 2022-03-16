@@ -5,11 +5,11 @@ class NewsViewController: UIViewController {
     
     var viewModel = NewsListViewModel()
     
-    // MARK: Views
+    // MARK: - Views
     private let searchVC = UISearchController(searchResultsController: nil)
     
     private lazy var tableView: UITableView = {
-       let tableView = UITableView()
+        let tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(NewsTableViewCell.self, forCellReuseIdentifier: NewsTableViewCell.identifier)
@@ -35,7 +35,7 @@ class NewsViewController: UIViewController {
     private func setupView() {
         view.backgroundColor = .systemBackground
         title = "News"
-
+        
         view.addSubviewForAutoLayout(tableView)
         setupConstraints()
     }
@@ -50,14 +50,14 @@ class NewsViewController: UIViewController {
     }
 }
 
-// MARK: NewsListViewModelDelegate
+// MARK: - NewsListViewModelDelegate
 extension NewsViewController: NewsListViewModelDelegate {
     func reloadData() {
         tableView.reloadData()
     }
 }
 
-// MARK: UITableViewDelegate
+// MARK: - UITableViewDelegate
 extension NewsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.newsVM.count
@@ -73,7 +73,7 @@ extension NewsViewController: UITableViewDataSource {
     }
 }
 
-// MARK: UITableViewDelegate
+// MARK: - UITableViewDelegate
 extension NewsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let news = viewModel.newsVM[indexPath.row]
@@ -85,7 +85,7 @@ extension NewsViewController: UITableViewDelegate {
     }
 }
 
-// MARK: UISearchBarDelegate
+// MARK: - UISearchBarDelegate
 extension NewsViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let text = searchBar.text, !text.isEmpty else { return }

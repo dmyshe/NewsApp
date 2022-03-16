@@ -29,7 +29,6 @@ class NewsImageView: UIView {
     
     func setupView() {
         addSubviewForAutoLayout(imageView)
-        
         setupConstraints()
     }
     

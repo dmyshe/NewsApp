@@ -13,7 +13,6 @@ final class NewsTableViewCell: UITableViewCell {
         return imageView
     }()
     
-    
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 20.0)
@@ -35,7 +34,6 @@ final class NewsTableViewCell: UITableViewCell {
         return label
     }()
 
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
