@@ -10,7 +10,7 @@ class NewsImageView: UIView {
         }
     }
     
-    //MARK: Views
+    //MARK: - Views
     private lazy var imageView: UIImageView = {
         let imageView  = UIImageView()
         imageView.contentMode = .scaleAspectFill
